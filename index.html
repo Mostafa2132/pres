@@ -1,4 +1,3 @@
-
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1a2e; }
@@ -57,6 +56,14 @@
   .mini-card { background: white; border-radius: 10px; padding: 18px 20px; border-top: 4px solid #c9a227; }
   .mini-card-title { font-size: 15px; font-weight: 700; color: #c9a227; margin-bottom: 8px; }
   .mini-card-text { font-size: 13px; color: #555; line-height: 1.6; }
+
+  /* Print styles to remove gaps between slides */
+  @media print {
+    * { margin: 0; padding: 0; }
+    body { background: white; margin: 0; padding: 0; }
+    .slide { margin: 0; padding: 0; border: none; }
+    div[style*="width:960px"] { margin: 0; padding: 0; background: white; }
+  }
 </style>
 
 <div style="width:960px; margin:0 auto; background:#111;">
@@ -103,7 +110,7 @@
   <div class="slide-heading">What is Nutritional Biochemistry?</div>
   <div class="card" style="margin-bottom:20px;">
     <div class="card-title">Definition</div>
-    <div class="card-text">Nutritional biochemistry is the study of the chemical processes and interactions between nutrients and biological systems, focusing on how diet influences health, metabolism, and disease.</div>
+    <div class="card-text">Nutritional biochemistry is the study of the chemical processes and interactions between nutrients and biological systems, focusing on how diet influences health, metabolism, and disease prevention.</div>
   </div>
   <div class="two-col">
     <div class="card">
@@ -131,7 +138,7 @@
   <div class="slide-heading">What is Biochemistry?</div>
   <div class="card" style="margin-bottom:18px;">
     <div class="card-title">The Word "Biochemistry"</div>
-    <div class="card-text">Means the chemistry of living beings, or the chemical basis of life. It is a branch of life science which deals with the study of biochemical reactions and processes occurring in living cells of organisms.</div>
+    <div class="card-text">Means the chemistry of living beings, or the chemical basis of life. It is a branch of life science which deals with the study of biochemical reactions and processes occurring in living organisms.</div>
   </div>
   <div class="two-col">
     <div class="card">
@@ -291,11 +298,11 @@
   <div style="display:grid;gap:18px;">
     <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:22px 28px;border-left:4px solid #c9a227;">
       <div style="font-size:17px;font-weight:700;color:#c9a227;margin-bottom:8px;">Nutrigenomics &amp; Nutrigenetics</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Cutting-edge topics exploring the interaction between diet and genes. Nutrigenomics examines how nutrients affect gene expression; nutrigenetics studies how genetic variations influence responses to specific nutrients — central to personalized nutrition.</div>
+      <div style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Cutting-edge topics exploring the interaction between diet and genes. Nutrigenomics examines how nutrients affect gene expression and phenotype. Nutrigenetics studies genetic variations that affect individual responses to nutrients.</div>
     </div>
     <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:22px 28px;border-left:4px solid #4a6fa5;">
       <div style="font-size:17px;font-weight:700;color:#7aa8e0;margin-bottom:8px;">Oxidative Stress &amp; Antioxidants</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Examines the biochemical basis of oxidative stress — an imbalance between reactive oxygen species and the body's detoxification capacity. Dietary antioxidants can mitigate cellular damage and help prevent chronic diseases like cardiovascular disease and cancer.</div>
+      <div style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Examines the biochemical basis of oxidative stress — an imbalance between reactive oxygen species and the body's detoxification systems. Discusses the role of antioxidants in maintaining cellular health.</div>
     </div>
   </div>
   <div class="slide-footer">Nada Tarek Mohamed | 25005539</div>
